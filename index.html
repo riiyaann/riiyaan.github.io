@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow Foto Pacar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Riyan Aditya Pramana</h1>
+        <img id="fotoPacar" src="foto/foto1.jpg" alt="Foto Pacar">
+        <div class="buttons">
+            <button onclick="gantiFoto(-1)">Sebelumnya</button>
+            <button onclick="gantiFoto(1)">Berikutnya</button>
+        </div>
+        <audio id="backgroundMusic" src="music/riyan.mp3"></audio>
+        <div class="music-controls">
+            <button onclick="playMusic()">music</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
