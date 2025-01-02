@@ -1,0 +1,109 @@
+/* Background estetik dengan gradien */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(foto/backround.png);
+    /* background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);*/
+    background-size: 200%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+  }
+  
+  /* Animasi untuk background gradien */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .image {
+    width: auto;
+    height: 200px;
+    aspect-ratio: 9/16;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, filter 0.3s;
+  }
+
+  .images {
+    width: auto;
+    height: 200px;
+    aspect-ratio: 9/16;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: rgb(2, 2, 2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #07315f;
+}
+
+.music-controls {
+    margin-top: 20px;
+}
+
+.music-controls button {
+    background-color: #88f7ef;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.music-controls button:hover {
+    background-color: #31cdd6;
+}
+
+.music-controls button:nth-child(2) {
+    background-color: #dc3545;
+}
+
+.music-controls button:nth-child(2):hover {
+    background-color: #c82333;
+}
